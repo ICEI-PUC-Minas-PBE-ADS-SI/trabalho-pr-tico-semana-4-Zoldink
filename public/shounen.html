@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GS GEEK</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -17,8 +16,9 @@
         <h1>GS GEEK</h1>
         <img class="Logo" src="imgss/Cs (2).png" alt="Logotipo">
 
-    </header>
 
+
+    </header>
 
 
     <br>
@@ -34,42 +34,27 @@
 
 
         </section>
-        <br>
-
 
 
         <br>
         <br>
         <br>
 
-        <h1 class="destaque">EM DESTAQUE</h1>
 
-        <a href="solo.html"> <img class="principal" src="imgss/slde.png" alt="Solo"></a>
-        <br>
-
-        <article>
-            <br>
-            <br>
-            <br>
-            <br>
-
-
-            <a href="op.html"><img src="imgss/op.jpg" alt="op"></a>
-            <p>One Piece</p>
-        </article>
         <article>
 
             <a href="jujutsu.html"><img src="imgss/jujutsu.jpg" alt="jujutsu"></a>
             <p>Jusutsu Kaisen</p>
         </article>
         <article>
+            <a href="op.html"><img src="imgss/op.jpg" alt="op"></a>
+            <p>One Piece</p>
+        </article>
+        <article>
             <a href="attk.html"><img src="imgss/attk.webp" alt="attk"></a>
             <p>Ataque on Titan</p>
         </article>
-        <article>
-            <a href="jojo.html"><img src="imgss/jojo.jpg" alt="jojo"></a>
-            <p>Jojo Bizarre</p>
-        </article>
+
         <article>
             <a href="damon.html"><img src="imgss/damon.webp" alt="damon"></a>
             <p>Damon Slayer</p>
@@ -93,35 +78,26 @@
     <br>
 
     <nav>
-
         <div class="lateral">
-            <input type="checkbox" id="menuToggle">
-            <label for="menuToggle" class="menu-icon">
-                <i class="fa fa-bars"></i>
-                <i class="fa fa-times-circle"></i>
-            </label>
-
-            <menu class="cat">
-                <center>
-                    <h1 class="categorias">Categorias</h1>
-                </center>
-                <ul class="barra">
-                    <a href="isekai.html">
-                        <li>Isekai</li>
-                    </a>
-                </ul>
-                <ul class="barra">
-                    <a href="shounen.html">
-                        <li>Shounen</li>
-                    </a>
-                </ul>
-                <ul class="barra">
-                    <a href="seinin.html">
-                        <li>Seinen</li>
-                    </a>
-                    </a>
-                </ul>
-            </menu>
+            <center>
+                <h1 class="categorias">Categorias</h1>
+            </center>
+            <ul class="barra">
+                <a href="isekai.html">
+                    <li>Isekai</li>
+                </a>
+            </ul>
+            <ul class="barra">
+                <a href="shounen.html">
+                    <li>Shounen</li>
+                </a>
+            </ul>
+            <ul class="barra">
+                <a href="seinin.html">
+                    <li>Seinen</li>
+                </a>
+                </a>
+            </ul>
 
 
 
@@ -135,7 +111,6 @@
     <footer class="box">
 
         <h3>CS GEEK</h3>
-
         <ul class="menu">
             <a href="index.html">
                 <li>HOME</li>
@@ -153,8 +128,32 @@
                 <li>SOBRE NOS</li>
             </a>
         </ul>
+        </div>
 
     </footer>
+    <style>
+        div.lateral {
+            width: 200px;
+            background-color: rgba(7, 7, 7, 0.39);
+            display: block;
+            position: absolute;
+            right: 0%;
+            bottom: 4%;
+            margin: 1%;
+            color: rgb(0, 0, 0);
+            top: 58%;
+            height: 68vh;
+            padding-top: 20px;
+            border: 3px solid#000000;
+        }
+
+        @media screen and (max-width:600px) {
+            nav {
+                display: none;
+            }
+
+        }
+    </style>
 
 
 
