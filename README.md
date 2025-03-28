@@ -8,14 +8,15 @@ Nessa atividade,vamos evoluir o projeto para que a home-page funcione bem tanto 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
+- Nome: Eric Gomes Cordeiro
+- Matricula: 1230510
+- Proposta de projeto escolhida: Catalogo de Filmes
 - Breve descrição sobre seu projeto:
+Um pagina focada em animes, com um anime em destaque e outros populares em seguida dele , com um menu de home , sobre nos e redes sociais , na barra lateral as categorias de cada anime e dentro de cada anime sua sinopse e clicando na imagem temos o treiler de cada.
 
 ## Print da versão responsiva com CSS puro
 
-<<  COLOQUE A IMAGEM AQUI >>
+![alt text](<Captura de tela 2025-03-28 171700.png>)
 
 ## Print da versão responsiva com Bootstrap
 
