@@ -20,4 +20,4 @@ Um pagina focada em animes, com um anime em destaque e outros populares em segui
 
 ## Print da versão responsiva com Bootstrap
 
-<<  COLOQUE A IMAGEM AQUI >>
+![alt text](<Captura de tela 2025-03-31 202504.png>)
