@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng="en">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -7,161 +7,129 @@
     <title>GS GEEK</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Adicionando o link do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body>
 
-    <!--Cabecalho-->
-    <header>
-        <img class="Logo" src="imgss/Cs (2).png" alt="Logotipo">
-        <h1>GS GEEK</h1>
-        <img class="Logo" src="imgss/Cs (2).png" alt="Logotipo">
-
+    <!-- Cabeçalho -->
+    <header class="text-center py-3">
+        <div class="container">
+            <!-- Imagem do cabeçalho ajustada para ser menor -->
+            <img class="Logo img-fluid" src="imgss/Cs (2).png" alt="Logotipo" style="max-width: 100px; height: auto;">
+            <h1 class="my-3">GS GEEK</h1>
+            <!-- Outra imagem do cabeçalho ajustada -->
+            <img class="Logo img-fluid" src="imgss/Cs (2).png" alt="Logotipo" style="max-width: 100px; height: auto;">
+        </div>
     </header>
 
-
-
-    <br>
-
-
-    <!--Conteudo com os filmes-->
-    <main>
-        <section>
-            <div>
-
-                <input class="pesquisa" type="text " placeholder="Pesquisar...">
-
-
-
-        </section>
-        <br>
-
-
-
-        <br>
-        <br>
-        <br>
-
-        <h1 class="destaque">EM DESTAQUE</h1>
-
-        <a href="solo.html"> <img class="principal" src="imgss/slde.png" alt="Solo"></a>
-        <br>
-
-        <article>
-            <br>
-            <br>
-            <br>
-            <br>
-
-
-            <a href="op.html"><img src="imgss/op.jpg" alt="op"></a>
-            <p>One Piece</p>
-        </article>
-        <article>
-
-            <a href="jujutsu.html"><img src="imgss/jujutsu.jpg" alt="jujutsu"></a>
-            <p>Jusutsu Kaisen</p>
-        </article>
-        <article>
-            <a href="attk.html"><img src="imgss/attk.webp" alt="attk"></a>
-            <p>Ataque on Titan</p>
-        </article>
-        <article>
-            <a href="jojo.html"><img src="imgss/jojo.jpg" alt="jojo"></a>
-            <p>Jojo Bizarre</p>
-        </article>
-        <article>
-            <a href="damon.html"><img src="imgss/damon.webp" alt="damon"></a>
-            <p>Damon Slayer</p>
-        </article>
-        <article>
-            <a href="hxh.html"><img src="imgss/Hunter_×_Hunter_(2011).png" alt="Hunter_×_Hunter_"></a>
-            <p>Hunter x Hunter</p>
-        </article>
-        <article>
-            <a href="naruto.html"><img src="imgss/naruto.jpg" alt="naruto"></a>
-            <p>Naruto</p>
-        </article>
-        <article>
-            <a href="myh.html"><img src="imgss/myh.jpg" alt="myh"></a>
-            <p> My Hero Academy</p>
-            </a>
-        </article>
-
-    </main>
-    <br>
-    <br>
-
-    <nav>
-
-        <div class="lateral">
-            <input type="checkbox" id="menuToggle">
-            <label for="menuToggle" class="menu-icon">
-                <i class="fa fa-bars"></i>
-                <i class="fa fa-times-circle"></i>
-            </label>
-
-            <menu class="cat">
-                <center>
-                    <h1 class="categorias">Categorias</h1>
-                </center>
-                <ul class="barra">
-                    <a href="isekai.html">
-                        <li>Isekai</li>
-                    </a>
-                </ul>
-                <ul class="barra">
-                    <a href="shounen.html">
-                        <li>Shounen</li>
-                    </a>
-                </ul>
-                <ul class="barra">
-                    <a href="seinin.html">
-                        <li>Seinen</li>
-                    </a>
-                    </a>
-                </ul>
-            </menu>
-
-
-
+    <!-- Navegação lateral (Categorias) - agora acima do conteúdo principal -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="isekai.html">Isekai</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shounen.html">Shounen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="seinin.html">Seinen</a>
+                </li>
+            </ul>
         </div>
-
-
     </nav>
 
+    <!-- Conteúdo com os filmes -->
+    <main class="container">
+        <!-- Pesquisa -->
+        <section class="mb-4">
+            <input class="pesquisa form-control" type="text" placeholder="Pesquisar...">
+        </section>
 
+        <h1 class="destaque text-center my-5">EM DESTAQUE</h1>
 
-    <footer class="box">
+        <div class="row mb-4">
+            <!-- Imagem Principal (Maior que as outras) - Aumentei ainda mais a imagem de "Solo" -->
+            <div class="col-12 col-md-12 col-lg-10 mb-4">
+                <a href="solo.html"> <img class="principal img-fluid w-100" src="imgss/slde.png" alt="Solo"></a>
+            </div>
+        </div>
 
+        <div class="row">
+            <!-- Filmes em destaque menores -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <a href="op.html"><img class="img-fluid" src="imgss/op.jpg" alt="op"></a>
+                <p class="text-center">One Piece</p>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <a href="jujutsu.html"><img class="img-fluid" src="imgss/jujutsu.jpg" alt="jujutsu"></a>
+                <p class="text-center">Jujutsu Kaisen</p>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <a href="attk.html"><img class="img-fluid" src="imgss/attk.webp" alt="attk"></a>
+                <p class="text-center">Ataque on Titan</p>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <a href="jojo.html"><img class="img-fluid" src="imgss/jojo.jpg" alt="jojo"></a>
+                <p class="text-center">Jojo Bizarre</p>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <a href="damon.html"><img class="img-fluid" src="imgss/damon.webp" alt="damon"></a>
+                <p class="text-center">Damon Slayer</p>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <a href="hxh.html"><img class="img-fluid" src="imgss/Hunter_×_Hunter_(2011).png" alt="Hunter_×_Hunter_"></a>
+                <p class="text-center">Hunter x Hunter</p>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <a href="naruto.html"><img class="img-fluid" src="imgss/naruto.jpg" alt="naruto"></a>
+                <p class="text-center">Naruto</p>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <a href="myh.html"><img class="img-fluid" src="imgss/myh.jpg" alt="myh"></a>
+                <p class="text-center">My Hero Academia</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="box text-center py-3 bg-dark text-white">
         <h3>CS GEEK</h3>
-
         <ul class="menu">
             <a href="index.html">
-                <li>HOME</li>
+                <li class="text-white">HOME</li>
             </a>
         </ul>
 
         <ul class="menu">
             <a href="redes.html">
-                <li>REDES SOCIAIS</li>
+                <li class="text-white">REDES SOCIAIS</li>
             </a>
         </ul>
 
         <ul class="menu">
             <a href="sobre.html">
-                <li>SOBRE NOS</li>
+                <li class="text-white">SOBRE NOS</li>
             </a>
         </ul>
-
     </footer>
 
-
-
-
-
-
-
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
