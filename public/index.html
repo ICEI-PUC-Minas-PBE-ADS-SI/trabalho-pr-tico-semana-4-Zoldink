@@ -46,6 +46,10 @@
 
     <!-- Conteúdo com os filmes -->
     <main class="container">
+        <div class="row" id="catalogo">
+            <!-- Cards gerados dinamicamente vão aparecer aqui -->
+          </div>
+          
         <!-- Pesquisa -->
         <section class="mb-4">
             <input class="pesquisa form-control" type="text" placeholder="Pesquisar...">
@@ -102,7 +106,11 @@
                 <p class="text-center">My Hero Academia</p>
             </div>
         </div>
+
+        
+        
     </main>
+    
 
     <!-- Rodapé -->
     <footer class="box text-center py-3 bg-dark text-white">
@@ -130,6 +138,115 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        const filmes = [
+  {
+    "id": 1,
+    "titulo": "One Piece",
+    "descricao": "Aventura dos Chapéus de Palha em busca do One Piece.",
+    "conteudo": "One Piece é um anime clássico com piratas, poderes e amizades.",
+    "categoria": "Shounen",
+    "autor": "Eiichiro Oda",
+    "data": "1999-10-20",
+    "imagem": "imgss/op.jpg",
+    "link": "op.html"
+  },
+  {
+    "id": 2,
+    "titulo": "Jujutsu Kaisen",
+    "descricao": "Feiticeiros enfrentam maldições poderosas.",
+    "conteudo": "Itadori Yuji entra no mundo das maldições e feitiçaria.",
+    "categoria": "Shounen",
+    "autor": "Gege Akutami",
+    "data": "2020-10-02",
+    "imagem": "imgss/jujutsu.jpg",
+    "link": "jujutsu.html"
+  },
+  {
+    "id": 3,
+    "titulo": "Ataque on Titan",
+    "descricao": "A humanidade luta contra titãs gigantes.",
+    "conteudo": "Eren e seus amigos enfrentam verdades chocantes sobre seu mundo.",
+    "categoria": "Seinen",
+    "autor": "Hajime Isayama",
+    "data": "2013-04-06",
+    "imagem": "imgss/attk.webp",
+    "link": "attk.html"
+  },
+  {
+    "id": 4,
+    "titulo": "Jojo Bizarre",
+    "descricao": "A lendária saga da família Joestar.",
+    "conteudo": "Cada geração da família Joestar enfrenta ameaças sobrenaturais.",
+    "categoria": "Aventura",
+    "autor": "Hirohiko Araki",
+    "data": "1987-01-01",
+    "imagem": "imgss/jojo.jpg",
+    "link": "jojo.html"
+  },
+  {
+    "id": 5,
+    "titulo": "Damon Slayer",
+    "descricao": "Tanjiro enfrenta demônios para salvar sua irmã.",
+    "conteudo": "Demon Slayer é um anime com visual impressionante e muita ação.",
+    "categoria": "Shounen",
+    "autor": "Koyoharu Gotouge",
+    "data": "2019-04-06",
+    "imagem": "imgss/damon.webp",
+    "link": "damon.html"
+  },
+  {
+    "id": 6,
+    "titulo": "Hunter x Hunter",
+    "descricao": "Gon parte em uma jornada para encontrar seu pai.",
+    "conteudo": "Um clássico da ação e estratégia no mundo dos caçadores.",
+    "categoria": "Shounen",
+    "autor": "Yoshihiro Togashi",
+    "data": "2011-10-02",
+    "imagem": "imgss/Hunter_×_Hunter_(2011).png",
+    "link": "hxh.html"
+  },
+  {
+    "id": 7,
+    "titulo": "Naruto",
+    "descricao": "Ninja determinado quer ser Hokage.",
+    "conteudo": "Naruto Uzumaki vive uma jornada de superação, amizade e batalhas épicas.",
+    "categoria": "Shounen",
+    "autor": "Masashi Kishimoto",
+    "data": "2002-10-03",
+    "imagem": "imgss/naruto.jpg",
+    "link": "naruto.html"
+  },
+  {
+    "id": 8,
+    "titulo": "My Hero Academia",
+    "descricao": "Jovens heróis treinam para salvar o mundo.",
+    "conteudo": "Izuku Midoriya sonha em se tornar o herói número 1.",
+    "categoria": "Shounen",
+    "autor": "Kohei Horikoshi",
+    "data": "2016-04-03",
+    "imagem": "imgss/myh.jpg",
+    "link": "myh.html"
+  }
+];
+
+        filmes.forEach(filme => {
+          const card = document.createElement('div');
+          card.className = 'col-12 col-md-6 col-lg-4 mb-4';
+      
+          card.innerHTML = `
+            <a href="${filme.link}">
+              <img class="img-fluid" src="${filme.imagem}" alt="${filme.titulo}">
+            </a>
+            <p class="text-center">${filme.titulo}</p>
+          `;
+      
+          document.getElementById('catalogo').appendChild(card);
+        });
+      </script>
+      
 </body>
 
 </html>
+

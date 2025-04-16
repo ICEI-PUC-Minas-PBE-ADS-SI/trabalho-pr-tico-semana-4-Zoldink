@@ -17,7 +17,10 @@ Um pagina focada em animes, com um anime em destaque e outros populares em segui
 ## Print da versão responsiva com CSS puro
 
 ![alt text](<Captura de tela 2025-03-28 171700.png>)
+![alt text](<Captura de tela 2025-04-16 174651.png>)
 
 ## Print da versão responsiva com Bootstrap
-
+![alt text](<Captura de tela 2025-04-16 174427.png>)
 ![alt text](<Captura de tela 2025-03-31 202504.png>)
+
+
